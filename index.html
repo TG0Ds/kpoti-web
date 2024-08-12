@@ -30,15 +30,14 @@
 
     <div class="main-content">
         <img src="hugep.png" class="hugep">
-        
+        <img src="3p.png" class="ppp">
     </div>
 
-    <div class="main-content2">
+    <div class="main-content3">
         <section class="main-txt">
             <p>KPOTI bersama dengan Direktorat PAUD Kemendikbud RI mengadakan kegiatan Perayaan Hari Anak Nasional, sekaligus Kick Off acara Paudpedia.<br>
                 Kegiatan dilaksanakan di CIBIS Park Simatupang pada hari Senin, 29 Juli 2024 dan diikuti oleh bebera-</p>
         </section>
-        <img src="3p.png" class="ppp">
     </div>
 
     <button class="more">Baca selengkapnya</button>
@@ -48,8 +47,22 @@
             var sidebar = document.getElementById("sidebar");
             if (sidebar.style.transform === "translateX(0%)") {
                 sidebar.style.transform = "translateX(-100%)";
+                document.removeEventListener("click", close)
             } else {
                 sidebar.style.transform = "translateX(0%)";
+                setTimeout(() => {
+                    document.addEventListener("click", close)
+                },100);
+            }
+        }
+
+        function close() {
+            var sidebar = document.getElementById("sidebar")
+            var sidebarbtn = document.querySelector(".sidebar-btn")
+
+            if(!sidebar.contains(event.target) && !sidebarbtn.contains(event.target)) {
+                sidebar.style.transform = "translateX(-100%)";
+                document.body.removeEventListener("click", close)
             }
         }
     </script>

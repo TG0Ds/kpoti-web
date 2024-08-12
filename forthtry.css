@@ -98,8 +98,7 @@
     margin: 0 2% 0 2%;
 }
 
-.main-content2 {
-    display: flex;
+.main-content3 {
     align-items: center;
     max-width: 96%;
     margin: 0 0 0 2%;
@@ -111,8 +110,8 @@
 }
 
 .ppp {
-    padding: 0 0 0 6.5%;
-    max-width: 50%;
+    padding: 0 0 0 1%;
+    max-width: 98.3%;
 }
 
 .main-txt {
@@ -120,17 +119,18 @@
 }
 
 .main-txt p {
-    font-size: 1.8vw;
-    width: 40vw;
+
+    font-size: 4vw;
+    width: 90vw;
 }
 
 .more {
-    font-size: 1.5vw;
+    font-size: 4vw;
     padding: 1vw;
-    border-radius: 2vw;
+    border-radius: 5vw;
     background-color: #7f7053;
     border-width: 0.3vw;
-    margin: 0 0 0 3%;
+    margin: 1% 0 0 3%;
 }
 
 .more p {
