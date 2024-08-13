@@ -57,6 +57,17 @@
     gap: 0.5rem;
 }
 
+.up-bar {
+    display: none;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 2.5vw;
+}
+
+.up-bar a {
+    color: black;
+}
+
 .sidebar-btn {
     background-color: white;
     border: none;
@@ -98,7 +109,7 @@
     margin: 0 2% 0 2%;
 }
 
-.main-content3 {
+.main-contentt {
     align-items: center;
     max-width: 96%;
     margin: 0 0 0 2%;
@@ -119,7 +130,6 @@
 }
 
 .main-txt p {
-
     font-size: 4vw;
     width: 90vw;
 }
@@ -129,7 +139,7 @@
     padding: 1vw;
     border-radius: 5vw;
     background-color: #7f7053;
-    border-width: 0.3vw;
+    border: none;
     margin: 1% 0 0 3%;
 }
 
@@ -137,8 +147,170 @@
     max-width: 2vw;
 }
 
-@media only screen and (min-width: 500px){
-   .sidebar-btn {
+.more:hover {
+    background-color: #333;
+    color: #7f7053;
+}
+
+.more2 {
+    font-size: 4vw;
+    padding: 1vw;
+    border-radius: 5vw;
+    background-color: #7f7053;
+    border: none;
+    margin: 1% 0 0 3%;
     display: none;
+}
+
+.more2 p {
+    max-width: 2vw;
+}
+
+.more2:hover {
+    background-color: #333;
+    color: #7f7053;
+}
+
+/*css for 700px*/
+
+.main-content2 {
+    align-items: center;
+    max-width: 96%;
+    margin: 0 2% 0 2%;
+    display: none;
+}
+
+.ppp2 {
+    padding: 0 1% 0 0;
+    max-width: 50%;
+}
+
+.main-txt2 {
+     padding: 0 0 0 1%;
+     font-size: 90%;
+}
+
+/*this one is for 1000px*/
+
+.user2 {
+    max-width: 5vw;
+}
+
+@media only screen and (min-width: 700px){
+    .ppp {
+        display: none;
+    }
+
+    .main-txt {
+        display: none;
+    }
+
+    .main-content2 {
+        display: flex;
+    }
+
+    .more {
+        margin: 0.5% 0 0 3%;
+        padding: 0.8vw;
+        font-size: 2vw;
+    }
+
+    .more p {
+        max-width: 1vw;
+    }
+
+    .sidebar {
+        width: 33vw;
+        padding: 10% 0 100% 0;
+    }
+    
+    .sidebar a {
+        font-size: 4vw;
+        padding: 1vw;
+        margin-left: 15%;
+    }
+    
+    .user {
+        position: absolute;
+        max-width: 30%;
+        top: 2vw;
+        left: 12vw;
+        transition: 0.5s;
+    }
+    
+    .closebtn {
+        position: absolute;
+        top: -1vw;
+        right: 1vw;
+        font-size: 5vw;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+
+    .bar-1 {
+        display: none;
+    }
+    
+    .up-bar {
+        display: flex;
+        gap: 0;
+    }
+
+    .up-bar a{
+        text-decoration: none;
+        font-size: 2vw;
+        padding: 0 0 0 1vw;
+    }
+
+    .up-bar a:hover{
+        text-decoration: underline;
+    }
+
+    .logo1 {
+        max-width: 11vw;    
+        margin-right: -1vw;
+    }
+
+    .search {
+        max-width: 25vw;
+        height: 1.5vw;
+        font-size: 1.5vw;
+        margin: 0 0.3vw 0 1vw;
+    }
+
+    .user2 {
+        margin: 0 0 0 0;
+    }
+
+    .ppp2 {
+        padding: 0 0.7% 0 0;
+        max-width: 50%;
+    }
+
+    .main-txt2 {
+        padding: 0 0 0 1%;
+        font-size: 120%;
    }
+
+   .more {
+        margin: -10% 0 0 3%;
+        padding: 0.3vw;
+        font-size: 1.5vw;
+        display: none;
+    }
+
+    .more2 {
+        display: block;
+        margin: 0.5% 0 0 0%;
+        padding: 0.8vw;
+        font-size: 1vw;
+    }
+
+    .more2:hover {
+        cursor: pointer;
+    }
 }
