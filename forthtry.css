@@ -319,7 +319,7 @@
     }
 }
 
-@media only screen and (min-height: 400px) {
+@media only screen and (max-height: 400px) {
     
     .sidebar a {
         font-size: 120%;
