@@ -326,4 +326,8 @@
         padding: 2%;
         margin-left: 25%;
     }
+
+    .sidebar {
+        padding: 15% 0 100% 0;
+    }
 }
